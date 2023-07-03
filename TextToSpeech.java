@@ -2,13 +2,11 @@ import javax.speech.Engine;
 import javax.speech.EngineException;
 import javax.speech.EngineStateError;
 import java.util.Locale;
-import javax.speech.AudioException;
 import javax.speech.Central;
-import java.util.Scanner;
 import javax.speech.synthesis.SynthesizerModeDesc;
 import javax.speech.synthesis.Synthesizer;
 
-public class TextToSpeech {
+public class TextToSpeech{
     private Synthesizer tts;
     public TextToSpeech() {
         try {
@@ -37,24 +35,5 @@ public class TextToSpeech {
         }catch(EngineException | EngineStateError e){
             e.printStackTrace();
         }
-    }
-    public static void main(String[] args) {
-        System.out.println("Hello from testing");
-        TextToSpeech tts=new TextToSpeech();
-        System.out.println("Welcome to text to speech:");
-        Scanner scan=new Scanner(System.in);
-        while(true){
-            System.out.print("Enter word/line to make pc speak it:");
-            String msg=scan.nextLine();
-            System.out.println("You entered:"+msg);
-            tts.speak(msg);
-            if(msg.toLowerCase().equals("exit")){
-                tts.speak("Bye admin");
-                System.out.println("Bubyee!!");
-                break;
-            }
-        }
-        scan.close();
-        tts.deallocate();
     }
 }
