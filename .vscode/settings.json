@@ -1,0 +1,15 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "freetts-1.2/lib/freetts.jar",
+        "freetts-1.2/lib/mbrola.jar",
+        "freetts-1.2/lib/jsapi.jar",
+        "freetts-1.2/lib/freetts-jsapi10.jar",
+        "freetts-1.2/lib/en_us.jar",
+        "freetts-1.2/lib/cmutimelex.jar",
+        "freetts-1.2/lib/cmulex.jar",
+        "freetts-1.2/lib/cmudict04.jar",
+        "freetts-1.2/lib/cmu_us_kal.jar",
+        "freetts-1.2/lib/cmu_time_awb.jar"
+    ]
+}
